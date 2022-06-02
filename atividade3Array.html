@@ -1,0 +1,43 @@
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+       var inventarioDrofo = ["anel da invisibilidade ", " par de botas mágicas", " par de botas mágicas", " poção do sono"," poção da inocência"," poção da inocência"];
+       var inventarioTopper = ["capa da invisibilidade ", " pedra do despertar ",  " varinha das varinhas ", " poção da inocência "," poção da mentira "," poção da mentira "+ " poção anti-inteligência "];
+   
+       //Torper consumiu uma das poções da mentira,
+       //perdeu sua pedra e ganhou um par de botar mágicas do Drofo
+        //achou um escudo mágico e uma espada mágica. 
+
+        inventarioTopper.splice(4,1); //Topper consome poçao da mentira
+        inventarioTopper.splice(1,1); //Perdeu sua pedra
+        inventarioDrofo.splice(1,1); // Drofo doa Par de botas mágicas
+        inventarioTopper.push('Par de Botas Mágicas'); // Topper recebe botas mágicas
+
+        //Drofo, ganhou mais uma bota mágica,
+         //usou sua poção do sono 
+         //consumiu a poção anti-inteligência do Torper
+        //encontrou um ovo de dragão e uma coxinha.
+
+        inventarioDrofo.push("Par de Botas Mágicas");
+        inventarioDrofo.splice(3,1);//usou sua poção do sono 
+        inventarioTopper.splice(6,1);
+
+        inventarioDrofo.push("Ovo de Dragão");
+        inventarioDrofo.push("Coxinha");
+
+        document.write("<strong>"+"Inventario Topper: "+"</strong>"+inventarioTopper+"<br/>");
+        document.write("<strong>"+"Inventario Drofo: "+"</strong>"+inventarioDrofo);
+   
+   
+   
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
